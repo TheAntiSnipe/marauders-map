@@ -29,7 +29,7 @@ var map = L.map('mapid', {
 // dimensions of the image
 var w = 5120,
   h = 5120,
-  url = './map-images/final-merged-map.jpg';
+  url = './python-scripts/final-merged-map.jpg';
 
 // calculate the edges of the image, in coordinate space
 var southWest = map.unproject([0, h], map.getMaxZoom() - 1);
