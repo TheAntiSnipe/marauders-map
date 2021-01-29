@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/mihir/Documents/marauders-map/map.html",
+            "url": "file:///C:/Users/mihir/Documents/GitHub/marauders-map/map.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
