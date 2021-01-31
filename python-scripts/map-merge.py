@@ -17,9 +17,6 @@ def merge_images_horizontally(imgs, coordinate):
 
 
 def merge_images_vertically(imgs):
-    '''
-    This function merges images vertically
-    '''
     # create two lists - one for heights and one for widths
     widths, heights = zip(*(i.size for i in imgs))
     width_of_new_image = min(widths)  # take minimum width
