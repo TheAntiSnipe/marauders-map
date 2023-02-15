@@ -59,7 +59,7 @@ const initializeMap = () => {
   // dimensions of the image
   const width = 5120;
   const height = 5120;
-  const url = "../python-scripts/final-merged-map.jpg";
+  const url = "./scripts/final-merged-map.jpg";
   // calculate the edges of the image, in coordinate space
   const southWest = map.unproject([0, height], map.getMaxZoom() - 1);
   const northEast = map.unproject([width, 0], map.getMaxZoom() - 1);
@@ -76,8 +76,8 @@ const initializeMap = () => {
 // positionHandler as a callback.
 const buildEnvironment = () => {
   initializeMap();
-  renderCustomIcon("../marker-asset-files/teleport.png", teleporterLocations);
-  renderCustomIcon("../marker-asset-files/sos.png", statueOfSevenLocations);
+  renderCustomIcon("./scripts/marker-asset-files/teleport.png", teleporterLocations);
+  renderCustomIcon("./scripts/marker-asset-files/sos.png", statueOfSevenLocations);
   map.on("click", positionHandler);
 };
 
